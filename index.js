@@ -5,24 +5,22 @@ const path = require("path");
 
 const fileRegex = /\.(svg)$/;
 
-export default function svgLoader(options = {}) {
+module.exports.svgLoader = function (options = {}) {
   return {
     name: "svg-loader",
 
-    transform(src, id) {
+    transform(id, src) {
       console.log(`id is ${id}`);
 
       const svg = optimizeSvg(src);
 
       return {
         code: compileTemplate({
-          id: path.basename(
-            url.parse(id)
-          ),
+          id: path.basename(url.parse(id)),
           source: svg,
           filename: id,
         }),
       };
     },
   };
-}
+};
