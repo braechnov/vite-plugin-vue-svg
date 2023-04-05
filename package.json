@@ -1,6 +1,6 @@
 {
-  "name": "vite-plugin-vue-svg",
-  "version": "0.0.0",
+  "name": "vite-plugin-vue-svg-loader",
+  "version": "0.0.1",
   "description": "a plugin for vite and vue to load svg from a file with an import statement for inclusion in a template",
   "main": "index.js",
   "scripts": {
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/braechnov/vite-plugin-vue-svg.git"
+    "url": "git+https://github.com/braechnov/vite-plugin-vue-svg-loader.git"
   },
   "keywords": [
     "vite",
@@ -20,9 +20,9 @@
   "author": "Ben Major <braechnov@outlook.com>",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/braechnov/vite-plugin-vue-svg/issues"
+    "url": "https://github.com/braechnov/vite-plugin-vue-svg-loader/issues"
   },
-  "homepage": "https://github.com/braechnov/vite-plugin-vue-svg#readme",
+  "homepage": "https://github.com/braechnov/vite-plugin-vue-svg-loader#readme",
   "dependencies": {
     "@vue/compiler-sfc": "^3.2.47",
     "svgo": "^3.0.2"
